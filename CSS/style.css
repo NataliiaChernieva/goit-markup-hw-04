@@ -150,10 +150,18 @@ body {
 .second-bgcolor {
   max-width: 1600px;
   background-color: var(--secondary-bg-color);
-  background-image: url("../images/Img.jpg");
-  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-bgcolor {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/img.jpg");
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -215,6 +223,7 @@ body {
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   margin-bottom: 30px;
 }
 
@@ -318,7 +327,32 @@ body {
   margin-top: 10px;
 }
 
+.social-link {
+  display: flex;
+}
 /*========= END OUR TEAM====*/
+
+/*========= Постоянные клиенты====*/
+.clients {
+  display: inline-flex;
+}
+
+.clients-link {
+  box-sizing: border-box;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+}
+
+/*=========  END Постоянные клиенты====*/
 
 /*========= FOOTER====*/
 .addresses {
