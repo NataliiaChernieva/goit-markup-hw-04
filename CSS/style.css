@@ -318,6 +318,11 @@ li.connect-item not(:last-child) {
   margin-right: 32px;
 }
 
+.zero {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -335,6 +340,10 @@ li.connect-item not(:last-child) {
 .social-list-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+
+.decor:not(:last-child) {
+  margin-right: 10px;
 }
 
 .link-icon {
@@ -402,9 +411,19 @@ li.connect-item not(:last-child) {
 }
 
 .footer {
+  display: flex;
+}
+
+.first {
   display: block;
-  padding-bottom: 60px;
-  padding-top: 60px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-right: 70px;
+}
+
+.join {
+  margin-top: 72px;
+  margin-bottom: 100px;
 }
 
 .footer-link {
@@ -422,6 +441,26 @@ li.connect-item not(:last-child) {
 .logo-footer {
   color: var(--other-color-text);
 }
+
+.footer-title {
+  color: var(--other-color-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.color {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-color {
+  fill: var(--other-color-text);
+}
+
 /*========= END FOOTER====*/
 
 /*========= PORTFOLIO====*/
@@ -490,8 +529,6 @@ li.connect-item not(:last-child) {
 
 /*========= END PORTFOLIO====*/
 
-.link-decoration:focus,
-.link-decoration:hover,
 .connect:hover,
 .connect:focus,
 .link:hover,
@@ -513,4 +550,9 @@ li.connect-item not(:last-child) {
 .connect:hover .connect-icon,
 .connect:focus .connect-icon {
   fill: var(--accent-color);
+}
+.type:hover,
+.type:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
