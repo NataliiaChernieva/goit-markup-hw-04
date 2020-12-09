@@ -134,7 +134,7 @@ body {
   margin-bottom: 32px;
 }
 
-.connection a:not(:last-child) {
+li.connect-item not(:last-child) {
   margin-right: 50px;
 }
 
@@ -216,43 +216,24 @@ body {
   padding-bottom: 0;
 }
 
-.advantages-item::before {
-  content: "";
+.advantages-item {
   display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-bottom: 30px;
-}
-
-.advantages-item:nth-child(1)::before {
-  content: "";
-  background-image: url("../images/antenna1.svg");
-}
-
-.advantages-item:nth-child(2)::before {
-  content: "";
-  background-image: url("../images/clock1.svg");
-}
-.advantages-item:nth-child(3)::before {
-  content: "";
-  background-image: url("../images/diagram1.svg");
-}
-.advantages-item:nth-child(4)::before {
-  content: "";
-  background-image: url("../images/astronaut1.svg");
-}
-
-/* (100%-3маржина*30px)/4столбца */
-.advantages li {
   /*width: calc(100%-90)/4;*/
   width: 270px;
 }
 
-.advantages li:not(:last-child) {
+.advantages-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantages-icon {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .list-title {
@@ -301,7 +282,7 @@ body {
   display: flex;
 }
 
-.team li:not(:last-child) {
+.card-list:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -310,6 +291,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .name {
@@ -325,31 +307,76 @@ body {
   font-weight: 400;
   color: var(--secondary-text-color);
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
-.social-link {
+.social-list {
   display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-list-link:hover .link-icon,
+.social-list-link:focus .link-icon {
+  fill: var(--other-color-text);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.link-icon {
+  fill: #afb1b8;
+  widht: 20px;
+  height: 20px;
 }
 /*========= END OUR TEAM====*/
 
 /*========= Постоянные клиенты====*/
 .clients {
-  display: inline-flex;
+  display: flex;
 }
 
 .clients-link {
-  box-sizing: border-box;
+  display: flex;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
-.clients-link:not(:last-child) {
+.clients-link:focus .clients-icon,
+.clients-link:hover .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients-link:focus,
+.clients-link:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .clients-icon {
+  fill: #afb1b8;
+  wight: 44px;
+  height: 49px;
 }
 
 /*=========  END Постоянные клиенты====*/
@@ -481,4 +508,9 @@ body {
 .portfolio-button:hover {
   background-color: var(--accent-color);
   color: var(--other-color-text);
+}
+
+.connect:hover .connect-icon,
+.connect:focus .connect-icon {
+  fill: var(--accent-color);
 }
