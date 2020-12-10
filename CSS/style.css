@@ -184,13 +184,19 @@ li.connect-item:not(:last-child) {
 }
 .button {
   display: block;
+  box-sizing: border-box;
   min-width: 200px;
   background-color: #f5f4fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
+  /*border: 1px solid transparent;*/
   padding: 10px 32px;
   cursor: pointer;
   margin: auto auto;
+}
+
+.button p {
   font-family: inherit;
   color: inherit;
   font-weight: 700;
@@ -286,8 +292,10 @@ li.connect-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.card {
+.card-list {
   box-sizing: border-box;
+  height: 428px;
+  background: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -503,6 +511,7 @@ li.connect-item:not(:last-child) {
 .portfolio-button {
   background-color: var(--other-bg-color);
   border: none;
+  border-radius: 4px;
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
