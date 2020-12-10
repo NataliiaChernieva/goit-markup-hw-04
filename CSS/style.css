@@ -542,8 +542,8 @@ li.connect-item:not(:last-child) {
 .connect:focus,
 .link:hover,
 .link:focus,
-.addresses:hover,
-.addresses:focus,
+.el:hover,
+.el:focus,
 .logo-link:focus {
   color: var(--accent-color);
 }
