@@ -186,7 +186,7 @@ li.connect-item:not(:last-child) {
   display: block;
   box-sizing: border-box;
   min-width: 200px;
-  background-color: #f5f4fa;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -198,7 +198,8 @@ li.connect-item:not(:last-child) {
 
 .button p {
   font-family: inherit;
-  color: inherit;
+  /*color: inherit;*/
+  color: var(--other-color-text);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
